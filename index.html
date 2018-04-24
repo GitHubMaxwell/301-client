@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Its Alive</title>
+  <title>Its Alive</title>
 </head>
+
 <body>
-<main>
+  <main>
     Hello World
-</main>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
 
-  (function(){
-    $.getJSON("https://swapi.co/api/starships")
-    .then(ships => console.log(ships))
-    .catch( console.error );
-  })();
+    (function () {
+      $.getJSON("https://maxwell-todo.herokuapp.com/api/v1/tasks")
+        .then(ships => console.log(ships))
+        .catch(console.error);
+    })();
 
-</script>
+  </script>
 </body>
+
 </html>
